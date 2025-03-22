@@ -1,0 +1,48 @@
+
+Home Task
+
+1.1
+dr[iau]nk(s|ing)?
+br(ing|ought)(s|ing)?
+
+drink, drank, drunk, drinking, drinks
+bring, brought, brings, bringing
+
+
+1.2
+Ma?c[A-Z][a-z]+
+
+Mac Iomhair, Mac Ospaic, Mac Raghnaill, MacDonald (surname), MacDonnell (surname), McLaughlin (surname), McLean,McLoughlin, McMahon (surname), McManus, McMenamin, Mack (surname)
+
+
+1.3
+книжк[аиеуо](й|ю)?
+
+книжка книжки книжке книжку книжкой книжкою книжке
+
+
+1.4
+город(о)?к(а|у|(ом)|е)?
+
+городок городка городку городок городком городке
+
+
+1.5
+Т(\s|\.)\s?\d{3}(-\d{2}){2}
+
+
+2.1
+в более общем виде
+[^м\.](ул\.)?[А-Я]\.?[А-Я]?[а-я]+(\sпер\.\,?)?(\s|\,\s)(дом|д\.)?\s?\d+\/?(\d+)?
+
+
+2.2
+найти
+((ул\.[А-Я]\.?[А-Я]?[а-я]+(\s|\,\s)(дом|д\.)?\s?\d+\/?\d+)|([А-Я][а-я]+\s(пер)?\.\,?\s(д\.\d+(\/\d+)?)?)|([А-Я][а-я]+\,\sд\.\d+))
+
+заменить на
+<addr>\1</addr>
+
+
+2.3
+\d+\.?\,?\d+(\/\d+\.?\,?\d+){1,2}\sкв\.м
